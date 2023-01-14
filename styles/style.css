@@ -1,6 +1,7 @@
 :root {
   --background-color: rgba(255, 144, 14, 0.1);
   --primary-color: #ff900e;
+  --text-color: #424242;
 }
 * {
   box-sizing: border-box;
@@ -8,3 +9,96 @@
   padding: 0;
   font-family: "Work Sans", sans-serif;
 }
+/* common styles start */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.primary-btn {
+  padding: 20px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+}
+/* common styles end */
+
+/* header styles start  */
+.header {
+  background-color: var(--background-color);
+}
+
+.header-content {
+  max-width: 862px;
+  text-align: center;
+  margin: 0 auto;
+}
+.header-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+.header-content p {
+  margin: 32px 0;
+}
+.header-img {
+  padding: 15px;
+  margin-top: 50px;
+  max-width: 1440px;
+  max-height: 700px;
+}
+.header-img img {
+  width: 100%;
+}
+/* header styles end */
+
+/* navigation styles start */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 47px 0;
+}
+nav ul {
+  display: flex;
+  gap: 70px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+}
+.nav-brand {
+  font-size: 45px;
+  font-weight: 700;
+}
+/* navigation styles end */
+
+/* media query start   */
+@media only screen and (max-width: 575px) {
+  /* navigation responsive styles start  */
+  nav {
+    justify-content: center;
+    row-gap: 30px;
+  }
+  nav ul {
+    gap: 0px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  /* navigation responsive styles end */
+
+  /* header section responsive styles start */
+  .header-title {
+    font-size: 40px;
+  }
+  /* header section responsive styles end */
+}
+
+/* media query end   */
