@@ -103,16 +103,72 @@ nav ul li a {
 .quick-list-content {
   max-width: 537px;
 }
-.quick-list-title {
+.quick-list-title,
+.feature-section-title {
   font-size: 45px;
   width: 700;
 }
-.quick-list-description {
+.quick-list-description,
+.feature-section-description {
   margin-top: 24px;
   margin-bottom: 32px;
 }
 /* quick list section styles end  */
+/* features section styles start  */
+.features {
+  display: flex;
+  margin-top: 130px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 54px;
+}
+.features-content {
+  max-width: 586px;
+}
+.feature-section-title {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 21px;
+}
+.feature {
+  padding: 30px 33px;
+  box-shadow: 0px 4px 30px 0px #0000000f;
+  max-width: 586px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 
+.feature-img {
+  position: relative;
+  order: 2;
+  max-width: 708px;
+  /* width: 100%; */
+}
+.feature-img img {
+  width: 100%;
+}
+.experience {
+  position: absolute;
+  bottom: -6%;
+  left: -12%;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 46px 42px;
+  border-radius: 8px;
+  width: min-content;
+}
+.experience h1 {
+  font-size: 65px;
+}
+.experience p {
+  font-size: 25px;
+}
+/* features section styles end */
 /* media query start   */
 @media only screen and (max-width: 575px) {
   /* navigation responsive styles start  */
@@ -148,6 +204,15 @@ nav ul li a {
     text-align: center;
   }
   /* quick list section responsive styles end */
+  /* feature section responsive styles start */
+  .features {
+    padding: 0 15px;
+  }
+  .experience {
+    bottom: -10%;
+    left: 0%;
+  }
+  /* feature section responsive styles end */
 }
 
 /* media query end   */
