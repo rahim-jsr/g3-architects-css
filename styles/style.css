@@ -104,7 +104,8 @@ nav ul li a {
   max-width: 537px;
 }
 .quick-list-title,
-.feature-section-title {
+.feature-section-title,
+.fact-title {
   font-size: 45px;
   width: 700;
 }
@@ -169,6 +170,31 @@ nav ul li a {
   font-size: 25px;
 }
 /* features section styles end */
+
+.some-facts {
+  padding: 170px 15px;
+}
+.some-facts-content {
+  max-width: 542px;
+}
+.facts-container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.fact {
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  text-align: center;
+  padding: 45px 35px 60px;
+  height: 241px;
+  width: 241px;
+}
+.fact-title {
+  margin: 10px 0 5px;
+}
 /* media query start   */
 @media only screen and (max-width: 575px) {
   /* navigation responsive styles start  */
