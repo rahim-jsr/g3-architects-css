@@ -19,6 +19,7 @@
   padding: 20px 25px;
   font-size: 20px;
   font-weight: 600;
+  cursor: pointer;
   border: 0;
   border-radius: 8px;
   background-color: var(--primary-color);
@@ -106,7 +107,8 @@ nav ul li a {
 }
 .quick-list-title,
 .feature-section-title,
-.fact-title {
+.fact-title,
+.contact-title {
   font-size: 45px;
   width: 700;
 }
@@ -194,6 +196,12 @@ nav ul li a {
   padding: 45px 35px 60px;
   height: 241px;
   width: 241px;
+  transition-duration: 1.5s;
+}
+.fact:hover {
+  transform: scale(1.1);
+  border-color: black;
+  transition-duration: 1s;
 }
 .fact-title {
   margin: 10px 0 5px;
@@ -223,13 +231,60 @@ nav ul li a {
 .sponsors img {
   filter: grayscale();
 }
+/* sponsor section styles end  */
+/* contact us section styles start  */
+.contact-us {
+  display: flex;
+  margin-bottom: 130px;
+  width: 860px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.contact-title {
+  margin-bottom: 50px;
+}
+.contact-us form {
+  margin: 0 auto;
+}
+.client-info {
+  display: flex;
+  gap: 50px;
+}
+.contact-from input[type="text"],
+textarea {
+  font-size: 20px;
+  width: 100%;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  margin: 10px 0;
+  border: 1px solid var(--text-color);
+}
+.contact-from label {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.contact-from input[type="submit"] {
+  margin: 0 auto;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid var(--text-color);
+  background-color: white;
+}
+/* contact us section styles end  */
+
+/* footer section styles start  */
 .footer-description {
   padding: 39px 0;
   text-align: center;
   font-size: 20px;
   color: var(--text-color);
 }
-/* sponsor section styles end  */
+/* footer section styles end */
+
 /* media query start   */
 @media only screen and (max-width: 575px) {
   /* navigation responsive styles start  */
@@ -279,6 +334,11 @@ nav ul li a {
     align-items: center;
     padding: 15px;
   }
+  /* contact us section responsive styles start */
+  .client-info {
+    flex-direction: column;
+  }
+  /* contact us section responsive styles start */
 }
 
 /* media query end   */
